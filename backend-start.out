@@ -1,0 +1,1675 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2026-07-20 16:56:00.379  INFO 92352 --- [           main] c.e.f.FishingReservationApplication      : Starting FishingReservationApplication v1.0.0 using Java 17.0.16 on LAPTOP-AD7QJJL4 with PID 92352 (C:\Users\ASUS\Desktop\工作项目\钓鱼\target\fishing-reservation-1.0.0.jar started by ASUS in C:\Users\ASUS\Desktop\工作项目\钓鱼)
+2026-07-20 16:56:00.381  INFO 92352 --- [           main] c.e.f.FishingReservationApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-20 16:56:01.297  INFO 92352 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-20 16:56:01.300  INFO 92352 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-07-20 16:56:01.319  INFO 92352 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2026-07-20 16:56:02.026  INFO 92352 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-07-20 16:56:02.035  INFO 92352 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-20 16:56:02.036  INFO 92352 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-07-20 16:56:02.095  INFO 92352 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-20 16:56:02.095  INFO 92352 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1664 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Initialization Sequence datacenterId:21 workerId:24
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.5 
+2026-07-20 16:56:02.646  INFO 92352 --- [           main] org.redisson.Version                     : Redisson 3.23.5
+2026-07-20 16:56:02.882  INFO 92352 --- [isson-netty-2-4] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-07-20 16:56:02.885  INFO 92352 --- [isson-netty-2-7] o.r.c.pool.MasterConnectionPool          : 2 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-07-20 16:56:04.065  INFO 92352 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-20 16:56:04.096  INFO 92352 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-07-20 16:56:04.113  INFO 92352 --- [           main] c.e.f.FishingReservationApplication      : Started FishingReservationApplication in 4.095 seconds (JVM running for 4.441)
+2026-07-20 16:56:04.137  INFO 92352 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-20 16:56:04.249  INFO 92352 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-20 16:56:04.258  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : pond 表检查/创建完成
+2026-07-20 16:56:04.277  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : invite_code 表检查/创建完成
+2026-07-20 16:56:04.278  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : share_token 表检查/创建完成
+2026-07-20 16:56:04.279  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : merchant_staff 表检查/创建完成
+2026-07-20 16:56:04.282  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : 旧管理员角色已迁移为平台管理员(role=2)
+2026-07-20 16:56:04.285  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : 默认商家账号角色已修正为 merchant
+2026-07-20 16:56:04.287  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : 现有数据已归属到默认鱼塘
+2026-07-20 16:56:04.295  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : 商城表检查/创建完成
+2026-07-20 16:56:04.296  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : catch_records 表检查/创建完成
+2026-07-20 16:56:04.297  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : restaurant_menus 表检查/创建完成
+2026-07-20 16:56:04.298  INFO 92352 --- [           main] c.e.f.config.SchemaMigrationRunner       : 数据库结构自动迁移完成
+2026-07-20 16:56:24.248  INFO 92352 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-20 16:56:24.248  INFO 92352 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-20 16:56:24.249  INFO 92352 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@547a49d9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1651315216 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: merchant(String)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 16:15:43
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@547a49d9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b49c165] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@490444416 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET phone=?, nickname=?, password=?, role=?, admin_type=?, status=?, create_time=?, last_login_time=? WHERE id=?
+==> Parameters: merchant(String), 默认商家(String), $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS(String), 1(Integer), 0(Integer), 1(Integer), 2026-07-15T15:30:25(LocalDateTime), 2026-07-20T16:58:39.814998800(LocalDateTime), 9(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b49c165]
+2026-07-20 16:58:39.895  INFO 92352 --- [nio-8080-exec-5] c.e.fishing.controller.LoginController   : 用户登录成功: phone=merchant, role=1
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@623cf585] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1828394930 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: merchant(String)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 16:58:40
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@623cf585]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dc61d89] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@676549993 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET phone=?, nickname=?, password=?, role=?, admin_type=?, status=?, create_time=?, last_login_time=? WHERE id=?
+==> Parameters: merchant(String), 默认商家(String), $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS(String), 1(Integer), 0(Integer), 1(Integer), 2026-07-15T15:30:25(LocalDateTime), 2026-07-20T16:59:31.657760200(LocalDateTime), 9(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dc61d89]
+2026-07-20 16:59:31.662  INFO 92352 --- [nio-8080-exec-6] c.e.fishing.controller.LoginController   : 用户登录成功: phone=merchant, role=1
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f462c39] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1262215747 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 16:59:32
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f462c39]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b1ef718] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1314054392 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 9(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b1ef718]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@431d0514] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1306190599 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: merchant(String)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 16:59:32
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@431d0514]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3da16532] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1599449772 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET phone=?, nickname=?, password=?, role=?, admin_type=?, status=?, create_time=?, last_login_time=? WHERE id=?
+==> Parameters: merchant(String), 默认商家(String), $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS(String), 1(Integer), 0(Integer), 1(Integer), 2026-07-15T15:30:25(LocalDateTime), 2026-07-20T16:59:49.192480200(LocalDateTime), 9(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3da16532]
+2026-07-20 16:59:49.195  INFO 92352 --- [io-8080-exec-10] c.e.fishing.controller.LoginController   : 用户登录成功: phone=merchant, role=1
+2026-07-20 16:59:49.213  WARN 92352 --- [nio-8080-exec-1] c.e.f.common.GlobalExceptionHandler      : 业务异常: 请先登录
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28e7ceda] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1843746210 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 16:59:49
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28e7ceda]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fb68916] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1545132905 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_orders WHERE deleted = 0 AND (user_id = ? AND order_type = ?)
+==> Parameters: 9(Long), shop(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fb68916]
+2026-07-20 16:59:49.286  WARN 92352 --- [nio-8080-exec-3] c.e.f.common.GlobalExceptionHandler      : 业务异常: 请先登录
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@578bc7a8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1189934076 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 16:59:49
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@578bc7a8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@174fcadd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2029071611 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,reservation_id,user_id,slot_id,spot_id,draw_time,pond_id FROM draw_result WHERE (user_id = ?) ORDER BY draw_time DESC
+==> Parameters: 9(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@174fcadd]
+2026-07-20 17:00:00.013  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+JDBC Connection [HikariProxyConnection@1136578622 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:00:00.021634200(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c350f0a]
+2026-07-20 17:00:00.035  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36ee7a01] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1798058597 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: merchant(String)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 16:59:49
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36ee7a01]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13badb4a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1455523150 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET phone=?, nickname=?, password=?, role=?, admin_type=?, status=?, create_time=?, last_login_time=? WHERE id=?
+==> Parameters: merchant(String), 默认商家(String), $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS(String), 1(Integer), 0(Integer), 1(Integer), 2026-07-15T15:30:25(LocalDateTime), 2026-07-20T17:00:04.820949400(LocalDateTime), 9(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13badb4a]
+2026-07-20 17:00:04.826  INFO 92352 --- [nio-8080-exec-7] c.e.fishing.controller.LoginController   : 用户登录成功: phone=merchant, role=1
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f181b8c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1272606689 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:00:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f181b8c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e4ab791] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@915105546 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ?)
+==> Parameters: on(String), 0(Integer)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e4ab791]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c2be1a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1307314122 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:00:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c2be1a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2230a939] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@156766903 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2230a939]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47045f4d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@602592060 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:00:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47045f4d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28f3edf4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1307062672 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 9(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28f3edf4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc20b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@908312527 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:00:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc20b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68868e1a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@107287707 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,reservation_id,user_id,slot_id,spot_id,draw_time,pond_id FROM draw_result WHERE (user_id = ?) ORDER BY draw_time DESC
+==> Parameters: 9(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68868e1a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78a108f4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@590167114 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: merchant(String)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:00:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78a108f4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1acf19df] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@923667930 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET phone=?, nickname=?, password=?, role=?, admin_type=?, status=?, create_time=?, last_login_time=? WHERE id=?
+==> Parameters: merchant(String), 默认商家(String), $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS(String), 1(Integer), 0(Integer), 1(Integer), 2026-07-15T15:30:25(LocalDateTime), 2026-07-20T17:02:16.568087200(LocalDateTime), 9(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1acf19df]
+2026-07-20 17:02:16.572  INFO 92352 --- [nio-8080-exec-2] c.e.fishing.controller.LoginController   : 用户登录成功: phone=merchant, role=1
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c1b8ed8] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49a35bb7] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d9bc2e0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1118752801 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@146682002 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@979810946 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+==> Parameters: 9(Long)
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49a35bb7]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c1b8ed8]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d9bc2e0]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cceaf3c] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61aa16e8] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72ac0839] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1166881431 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1847005941 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@847324666 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==>  Preparing: SELECT id,reservation_id,user_id,slot_id,spot_id,draw_time,pond_id FROM draw_result WHERE (user_id = ?) ORDER BY draw_time DESC
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 9(Long)
+==> Parameters: 1(Integer)
+==> Parameters: 9(Long)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==      Total: 0
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cceaf3c]
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72ac0839]
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61aa16e8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5492cc5d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@858604114 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5492cc5d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10bb5903] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1557128917 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ?)
+==> Parameters: on(String), 0(Integer)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10bb5903]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5063fe19] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1663188259 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5063fe19]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9164c52] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@879955584 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_orders WHERE deleted = 0 AND (user_id = ? AND order_type = ?)
+==> Parameters: 9(Long), shop(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9164c52]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12596bf5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@636663815 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12596bf5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62fe2be1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@992076424 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62fe2be1]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62165a9b] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ab417c8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1052573341 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+JDBC Connection [HikariProxyConnection@621714869 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62165a9b]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ab417c8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75925722] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@527565839 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 9(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75925722]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78260131] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@45664379 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (slot_date = ? AND status = ?)
+==> Parameters: 2026-07-20(LocalDate), 1(Integer)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78260131]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ced89fd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@163759840 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ced89fd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7451dda2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@333166136 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 9(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7451dda2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59cf1c75] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@151214912 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59cf1c75]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54014405] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1963775556 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 9(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54014405]
+2026-07-20 17:05:00.003  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+JDBC Connection [HikariProxyConnection@203152802 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:05:00.005200200(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ed9fa8b]
+2026-07-20 17:05:00.042  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1559452c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@620039225 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: merchant(String)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:02:17
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1559452c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13e38ee5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1280104848 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET phone=?, nickname=?, password=?, role=?, admin_type=?, status=?, create_time=?, last_login_time=? WHERE id=?
+==> Parameters: merchant(String), 默认商家(String), $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS(String), 1(Integer), 0(Integer), 1(Integer), 2026-07-15T15:30:25(LocalDateTime), 2026-07-20T17:07:04.556970100(LocalDateTime), 9(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13e38ee5]
+2026-07-20 17:07:04.563  INFO 92352 --- [nio-8080-exec-4] c.e.fishing.controller.LoginController   : 用户登录成功: phone=merchant, role=1
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4da6897e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1853634385 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:07:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4da6897e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@595cd07a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@295699342 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (merchant_id = ?)
+==> Parameters: 9(Long)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (merchant_id = ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: 9(Long), 10(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@595cd07a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64f7f222] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1970202339 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:07:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64f7f222]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44eac12a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@495774096 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ?)
+==> Parameters: on(String), 0(Integer)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44eac12a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@718f392e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1656595933 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:07:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@718f392e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47b5a313] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1080517629 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ?)
+==> Parameters: on(String), 0(Integer)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47b5a313]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4368ed07] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@614766863 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-20 17:07:05
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4368ed07]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63fa343f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1729264787 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_orders WHERE deleted = 0 AND (user_id = ? AND order_type = ?)
+==> Parameters: 9(Long), shop(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63fa343f]
+2026-07-20 17:07:17.650  WARN 92352 --- [io-8080-exec-10] c.e.f.common.GlobalExceptionHandler      : 业务异常: 请先登录
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f4c6c48] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1692091981 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: 12312312312(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f4c6c48]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c8e0b5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1415391290 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: INSERT INTO sys_user ( phone, nickname, password, role, status, create_time ) VALUES ( ?, ?, ?, ?, ?, ? )
+==> Parameters: 12312312312(String), 1(String), $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe(String), 0(Integer), 1(Integer), 2026-07-20T17:08:02.047921500(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c8e0b5]
+2026-07-20 17:08:02.056  INFO 92352 --- [nio-8080-exec-4] c.e.fishing.controller.LoginController   : 用户注册成功: phone=12312312312, role=user
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c597967] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@652462869 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE (phone = ?)
+==> Parameters: 12312312312(String)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, null
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c597967]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f75cfe5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1170096707 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: UPDATE sys_user SET phone=?, nickname=?, password=?, role=?, status=?, create_time=?, last_login_time=? WHERE id=?
+==> Parameters: 12312312312(String), 1(String), $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe(String), 0(Integer), 1(Integer), 2026-07-20T17:08:02(LocalDateTime), 2026-07-20T17:08:10.258344200(LocalDateTime), 14(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f75cfe5]
+2026-07-20 17:08:10.265  INFO 92352 --- [nio-8080-exec-8] c.e.fishing.controller.LoginController   : 用户登录成功: phone=12312312312, role=0
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f0ee156] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f136c39] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@456200668 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@337b62ab] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+JDBC Connection [HikariProxyConnection@1955634861 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@595139371 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+==> Parameters: 14(Long)
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f136c39]
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@337b62ab]
+Creating a new SqlSession
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f0ee156]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2247485e] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41549b03] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@916556427 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3533304d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@693290936 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+JDBC Connection [HikariProxyConnection@496985068 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==>  Preparing: SELECT id,reservation_id,user_id,slot_id,spot_id,draw_time,pond_id FROM draw_result WHERE (user_id = ?) ORDER BY draw_time DESC
+==> Parameters: 1(Integer)
+==> Parameters: 14(Long)
+==> Parameters: 14(Long)
+<==      Total: 0
+<==      Total: 0
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41549b03]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3533304d]
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2247485e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51925d03] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1625104682 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51925d03]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6ab0d1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1141777067 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ?)
+==> Parameters: on(String), 0(Integer)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6ab0d1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3126651b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@399954364 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3126651b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6629360] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1772488237 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6629360]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a5b3076] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@843701170 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a5b3076]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ea319d4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1033394934 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE id=?
+==> Parameters: 1(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ea319d4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ff19f2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@376632982 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ff19f2]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+JDBC Connection [HikariProxyConnection@1379587406 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will be managed by Spring
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE id IN ( ? )
+==> Parameters: 1(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 3, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 16:15:58
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800] from current transaction
+==>  Preparing: UPDATE shop_products SET stock = stock - 1 WHERE (id = ? AND status = ? AND stock >= ?)
+==> Parameters: 1(Long), on(String), 1(Integer)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800] from current transaction
+==>  Preparing: INSERT INTO shop_orders ( order_no, order_type, user_id, merchant_id, total_amount, status, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: shop_20260720170829551515(String), shop(String), 14(Long), 9(Long), 5(Integer), pending_pay(String), 2026-07-20T17:08:29.495097400(LocalDateTime), 2026-07-20T17:08:29.495097400(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800] from current transaction
+==>  Preparing: INSERT INTO shop_order_items ( order_id, quantity, product_id, product_name, unit_price, subtotal, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 1(Long), 1(Integer), 1(Long), 13(String), 5(Integer), 5(Integer), 2026-07-20T17:08:29.495097400(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d651800]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29e8997b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1140080083 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29e8997b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@512058a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1750890258 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,order_no,order_type,user_id,pond_id,merchant_id,spot_id,total_amount,status,remark,deleted,create_time,update_time,paid_at FROM shop_orders WHERE id=? AND deleted=0
+==> Parameters: 1(Long)
+<==    Columns: id, order_no, order_type, user_id, pond_id, merchant_id, spot_id, total_amount, status, remark, deleted, create_time, update_time, paid_at
+<==        Row: 1, shop_20260720170829551515, shop, 14, null, 9, null, 5, pending_pay, null, 0, 2026-07-20 17:08:29, 2026-07-20 17:08:29, null
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@512058a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f3b252d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@709238532 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: UPDATE shop_orders SET status=?,paid_at=?,update_time=? WHERE deleted=0 AND (id = ?)
+==> Parameters: paid(String), 2026-07-20T17:08:29.522338600(LocalDateTime), 2026-07-20T17:08:29.522338600(LocalDateTime), 1(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f3b252d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bb846ae] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1516320580 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bb846ae]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26415c32] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1432843043 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_orders WHERE deleted = 0 AND (user_id = ? AND order_type = ?)
+==> Parameters: 14(Long), shop(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,order_no,order_type,user_id,pond_id,merchant_id,spot_id,total_amount,status,remark,deleted,create_time,update_time,paid_at FROM shop_orders WHERE deleted=0 AND (user_id = ? AND order_type = ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: 14(Long), shop(String), 10(Long)
+<==    Columns: id, order_no, order_type, user_id, pond_id, merchant_id, spot_id, total_amount, status, remark, deleted, create_time, update_time, paid_at
+<==        Row: 1, shop_20260720170829551515, shop, 14, null, 9, null, 5, paid, null, 0, 2026-07-20 17:08:29, 2026-07-20 17:08:30, 2026-07-20 17:08:30
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26415c32]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73ef8658] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@176080736 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,order_id,menu_id,menu_name,price,quantity,product_id,product_name,unit_price,subtotal,create_time FROM shop_order_items WHERE (order_id = ?) ORDER BY id ASC
+==> Parameters: 1(Long)
+<==    Columns: id, order_id, menu_id, menu_name, price, quantity, product_id, product_name, unit_price, subtotal, create_time
+<==        Row: 1, 1, null, null, null, 1, 1, 13, 5, 5, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73ef8658]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f9ddc2b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@329532287 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE id IN ( ? )
+==> Parameters: 1(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f9ddc2b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@260a3e1d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@271166070 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@260a3e1d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ea20bef] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1418217913 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_orders WHERE deleted = 0 AND (user_id = ? AND order_type = ?)
+==> Parameters: 14(Long), shop(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,order_no,order_type,user_id,pond_id,merchant_id,spot_id,total_amount,status,remark,deleted,create_time,update_time,paid_at FROM shop_orders WHERE deleted=0 AND (user_id = ? AND order_type = ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: 14(Long), shop(String), 10(Long)
+<==    Columns: id, order_no, order_type, user_id, pond_id, merchant_id, spot_id, total_amount, status, remark, deleted, create_time, update_time, paid_at
+<==        Row: 1, shop_20260720170829551515, shop, 14, null, 9, null, 5, paid, null, 0, 2026-07-20 17:08:29, 2026-07-20 17:08:30, 2026-07-20 17:08:30
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ea20bef]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@461eccff] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1355649028 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,order_id,menu_id,menu_name,price,quantity,product_id,product_name,unit_price,subtotal,create_time FROM shop_order_items WHERE (order_id = ?) ORDER BY id ASC
+==> Parameters: 1(Long)
+<==    Columns: id, order_id, menu_id, menu_name, price, quantity, product_id, product_name, unit_price, subtotal, create_time
+<==        Row: 1, 1, null, null, null, 1, 1, 13, 5, 5, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@461eccff]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@220044fc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@306781559 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE id IN ( ? )
+==> Parameters: 1(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@220044fc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f010da3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@857532246 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f010da3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@422d86b9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@19172577 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_orders WHERE deleted = 0 AND (user_id = ? AND order_type = ?)
+==> Parameters: 14(Long), shop(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,order_no,order_type,user_id,pond_id,merchant_id,spot_id,total_amount,status,remark,deleted,create_time,update_time,paid_at FROM shop_orders WHERE deleted=0 AND (user_id = ? AND order_type = ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: 14(Long), shop(String), 10(Long)
+<==    Columns: id, order_no, order_type, user_id, pond_id, merchant_id, spot_id, total_amount, status, remark, deleted, create_time, update_time, paid_at
+<==        Row: 1, shop_20260720170829551515, shop, 14, null, 9, null, 5, paid, null, 0, 2026-07-20 17:08:29, 2026-07-20 17:08:30, 2026-07-20 17:08:30
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@422d86b9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b765a61] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1846576234 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,order_id,menu_id,menu_name,price,quantity,product_id,product_name,unit_price,subtotal,create_time FROM shop_order_items WHERE (order_id = ?) ORDER BY id ASC
+==> Parameters: 1(Long)
+<==    Columns: id, order_id, menu_id, menu_name, price, quantity, product_id, product_name, unit_price, subtotal, create_time
+<==        Row: 1, 1, null, null, null, 1, 1, 13, 5, 5, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b765a61]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@720aaa77] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@198595333 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE id IN ( ? )
+==> Parameters: 1(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@720aaa77]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d84be1f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@686667823 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d84be1f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c20a061] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@836072404 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_orders WHERE deleted = 0 AND (user_id = ? AND order_type = ?)
+==> Parameters: 14(Long), shop(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,order_no,order_type,user_id,pond_id,merchant_id,spot_id,total_amount,status,remark,deleted,create_time,update_time,paid_at FROM shop_orders WHERE deleted=0 AND (user_id = ? AND order_type = ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: 14(Long), shop(String), 10(Long)
+<==    Columns: id, order_no, order_type, user_id, pond_id, merchant_id, spot_id, total_amount, status, remark, deleted, create_time, update_time, paid_at
+<==        Row: 1, shop_20260720170829551515, shop, 14, null, 9, null, 5, paid, null, 0, 2026-07-20 17:08:29, 2026-07-20 17:08:30, 2026-07-20 17:08:30
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c20a061]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41a601ed] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1534562782 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,order_id,menu_id,menu_name,price,quantity,product_id,product_name,unit_price,subtotal,create_time FROM shop_order_items WHERE (order_id = ?) ORDER BY id ASC
+==> Parameters: 1(Long)
+<==    Columns: id, order_id, menu_id, menu_name, price, quantity, product_id, product_name, unit_price, subtotal, create_time
+<==        Row: 1, 1, null, null, null, 1, 1, 13, 5, 5, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41a601ed]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16165b38] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1741588862 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE id IN ( ? )
+==> Parameters: 1(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16165b38]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ef4d14] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1861252729 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51ef4d14]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28f95d23] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@55915205 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28f95d23]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29d00c9b] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1002140498 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@80763e0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@863465337 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29d00c9b]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@80763e0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c51e5fb] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1789926b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@902596158 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@614660889 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (slot_date = ? AND status = ?)
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 2026-07-20(LocalDate), 1(Integer)
+==> Parameters: 14(Long)
+<==      Total: 0
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1789926b]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c51e5fb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bac7c1d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@487039749 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bac7c1d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27171e31] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1071404344 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ?)
+==> Parameters: on(String), 0(Integer)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27171e31]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@430dd9d4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1983922023 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@430dd9d4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71d98202] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@729518434 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ? AND category = ?)
+==> Parameters: on(String), 0(Integer), equipment(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ? AND category = ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), equipment(String), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71d98202]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b88c9eb] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@862652905 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b88c9eb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3043073f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@641088346 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ? AND category = ?)
+==> Parameters: on(String), 0(Integer), bait(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3043073f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4e3b19] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@564560668 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4e3b19]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f3e50d1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1426909623 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ? AND category = ?)
+==> Parameters: on(String), 0(Integer), equipment(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ? AND category = ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), equipment(String), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f3e50d1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@334f22d1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@331917280 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@334f22d1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20753555] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1011326763 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ?)
+==> Parameters: on(String), 0(Integer)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,pond_id,merchant_id,category,name,price,stock,image_url,description,status,create_time,update_time FROM shop_products WHERE (status = ? AND stock > ?) ORDER BY create_time DESC LIMIT ?
+==> Parameters: on(String), 0(Integer), 20(Long)
+<==    Columns: id, pond_id, merchant_id, category, name, price, stock, image_url, description, status, create_time, update_time
+<==        Row: 1, null, 9, equipment, 13, 5, 2, null, <<BLOB>>, on, 2026-07-20 16:15:58, 2026-07-20 17:08:29
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20753555]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@99c52df] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@786569353 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@99c52df]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b28a6b5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1590783333 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ? AND category = ?)
+==> Parameters: on(String), 0(Integer), fish(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b28a6b5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f9b418d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1265637597 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f9b418d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@585f024d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@637594720 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM shop_products WHERE (status = ? AND stock > ? AND category = ?)
+==> Parameters: on(String), 0(Integer), food(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@585f024d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c04cd87] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1593216865 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c04cd87]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@442fcc14] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1591564771 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 14(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@442fcc14]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@161b4ede] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1306172604 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@161b4ede]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60091b60] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@749257729 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 14(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60091b60]
+2026-07-20 17:10:00.002  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+JDBC Connection [HikariProxyConnection@766675288 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:10:00.010581900(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d63f80e]
+2026-07-20 17:10:00.020  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+2026-07-20 17:15:00.004  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+JDBC Connection [HikariProxyConnection@291875016 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:15:00.005753900(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dcccb4]
+2026-07-20 17:15:00.012  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@830bbf1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1503404479 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@830bbf1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12cc4458] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@523143875 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12cc4458]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b9515a7] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1406bdc8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@641596024 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1669455531 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b9515a7]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1406bdc8]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c7ae580] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72702f06] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@563819714 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1563684666 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (slot_date = ? AND status = ?)
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 2026-07-20(LocalDate), 1(Integer)
+==> Parameters: 14(Long)
+<==      Total: 0
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c7ae580]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72702f06]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dd24a0a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@932410316 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dd24a0a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e868fc0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1101728256 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 14(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e868fc0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13cd2dd7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@943405666 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13cd2dd7]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1203063b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1750737465 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1203063b]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e685d48] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25543602] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@104071967 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+JDBC Connection [HikariProxyConnection@636111684 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==> Parameters: 14(Long)
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25543602]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e685d48]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e61d87f] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@694d2814] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@436275607 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@86223464 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (slot_date = ? AND status = ?)
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==> Parameters: 2026-07-20(LocalDate), 1(Integer)
+==> Parameters: 14(Long)
+<==      Total: 0
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@694d2814]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e61d87f]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ac06774] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69899042] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@551c526c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@11879252 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1766549542 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+JDBC Connection [HikariProxyConnection@2112262580 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==> Parameters: 14(Long)
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@551c526c]
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ac06774]
+Creating a new SqlSession
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69899042]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5659e653] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1633767878 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f393bd] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,reservation_id,user_id,slot_id,spot_id,draw_time,pond_id FROM draw_result WHERE (user_id = ?) ORDER BY draw_time DESC
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52895214] was not registered for synchronization because synchronization is not active
+==> Parameters: 14(Long)
+JDBC Connection [HikariProxyConnection@31268065 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1800107254 wrapping com.mysql.cj.jdbc.ConnectionImpl@4656717c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 14(Long)
+<==      Total: 0
+==> Parameters: 1(Integer)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5659e653]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52895214]
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f393bd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5359e93c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2103638577 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5359e93c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dd2d032] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@828300477 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ?)
+==> Parameters: 1(Integer)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dd2d032]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20ecab5b] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55bd9f22] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2126522096 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1394063455 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 14(Long)
+==> Parameters: 14(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==        Row: 14, 12312312312, 1, $2a$10$v.x08A/VZl.wtzEBEvMDJuolshe.PMGt0If.7uMn1DPSI8KsgtWNe, 0, null, null, null, 1, null, 2026-07-20 17:08:02, 2026-07-20 17:08:10
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20ecab5b]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55bd9f22]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24c45b6e] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cb7ca8b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1631029982 wrapping com.mysql.cj.jdbc.ConnectionImpl@528f3f3e] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1699351216 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will not be managed by Spring
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (user_id = ?) ORDER BY create_time DESC
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (slot_date = ? AND status = ?)
+==> Parameters: 14(Long)
+==> Parameters: 2026-07-20(LocalDate), 1(Integer)
+<==      Total: 0
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24c45b6e]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cb7ca8b]
+2026-07-20 17:20:00.003  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+JDBC Connection [HikariProxyConnection@1548875567 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:20:00.004166600(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cb41748]
+2026-07-20 17:20:00.011  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+2026-07-20 17:25:00.013  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+JDBC Connection [HikariProxyConnection@318991765 wrapping com.mysql.cj.jdbc.ConnectionImpl@76ba6a4c] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:25:00.014139300(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@131f57bf]
+2026-07-20 17:25:00.020  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+2026-07-20 17:30:00.009  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+JDBC Connection [HikariProxyConnection@759373393 wrapping com.mysql.cj.jdbc.ConnectionImpl@54d606b2] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:30:00.019121400(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@745b498]
+2026-07-20 17:30:00.028  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+2026-07-20 17:35:00.001  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+JDBC Connection [HikariProxyConnection@983560744 wrapping com.mysql.cj.jdbc.ConnectionImpl@54d606b2] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:35:00.002790(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5cbc63]
+2026-07-20 17:35:00.009  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+2026-07-20 17:40:00.009  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+JDBC Connection [HikariProxyConnection@656458125 wrapping com.mysql.cj.jdbc.ConnectionImpl@54d606b2] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:40:00.010764200(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70d20dc8]
+2026-07-20 17:40:00.033  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+2026-07-20 17:45:00.001  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+JDBC Connection [HikariProxyConnection@1105923267 wrapping com.mysql.cj.jdbc.ConnectionImpl@54d606b2] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-20T17:45:00.002854900(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==      Total: 3
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1227f31c]
+2026-07-20 17:45:00.009  INFO 92352 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成
+2026-07-20 17:45:47.961  INFO 92352 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-20 17:45:47.964  INFO 92352 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

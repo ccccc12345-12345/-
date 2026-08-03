@@ -1,0 +1,231 @@
+﻿
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2026-07-23 15:07:00.054  INFO 46032 --- [           main] c.e.f.FishingReservationApplication      : Starting FishingReservationApplication v1.0.0 using Java 17.0.16 on LAPTOP-AD7QJJL4 with PID 46032 (E:\工作项目\钓鱼\target\fishing-reservation-1.0.0.jar started by ASUS in E:\工作项目\钓鱼)
+2026-07-23 15:07:00.062  INFO 46032 --- [           main] c.e.f.FishingReservationApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-23 15:07:01.654  INFO 46032 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-23 15:07:01.657  INFO 46032 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-07-23 15:07:01.687  INFO 46032 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-07-23 15:07:03.060  INFO 46032 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-07-23 15:07:03.074  INFO 46032 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-23 15:07:03.074  INFO 46032 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-07-23 15:07:03.167  INFO 46032 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-23 15:07:03.168  INFO 46032 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3025 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Initialization Sequence datacenterId:21 workerId:14
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.5 
+2026-07-23 15:07:04.578  INFO 46032 --- [           main] org.redisson.Version                     : Redisson 3.23.5
+2026-07-23 15:07:05.062  INFO 46032 --- [isson-netty-2-4] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-07-23 15:07:05.068  INFO 46032 --- [isson-netty-2-7] o.r.c.pool.MasterConnectionPool          : 2 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-07-23 15:07:06.098  INFO 46032 --- [           main] c.e.f.notify.RedisNotificationListener   : Redis 通知订阅器已启动
+2026-07-23 15:07:08.759  INFO 46032 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-23 15:07:08.862  INFO 46032 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-07-23 15:07:09.007  INFO 46032 --- [           main] c.e.f.FishingReservationApplication      : Started FishingReservationApplication in 9.428 seconds (JVM running for 9.99)
+2026-07-23 15:07:09.085  INFO 46032 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-23 15:07:09.251  INFO 46032 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-23 15:07:09.432  INFO 46032 --- [           main] c.e.fishing.config.DemoDataInitializer   : Demo data ready. boss=18800000001/123456, user=18800000002/123456
+2026-07-23 15:07:09.434  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : pond 表检查/创建完成
+2026-07-23 15:07:09.443  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : invite_code 表检查/创建完成
+2026-07-23 15:07:09.444  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : share_token 表检查/创建完成
+2026-07-23 15:07:09.445  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : merchant_staff 表检查/创建完成
+2026-07-23 15:07:09.451  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : 旧管理员角色已迁移为平台管理员(role=2)
+2026-07-23 15:07:09.453  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : 默认商家账号角色已修正为 merchant
+2026-07-23 15:07:09.455  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : 现有数据已归属到默认鱼塘
+2026-07-23 15:07:09.461  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : 商城表检查/创建完成
+2026-07-23 15:07:09.462  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : catch_records 表检查/创建完成
+2026-07-23 15:07:09.462  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : restaurant_menus 表检查/创建完成
+2026-07-23 15:07:09.462  INFO 46032 --- [           main] c.e.f.config.SchemaMigrationRunner       : 数据库结构自动迁移完成
+2026-07-23 15:08:02.919  INFO 46032 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-23 15:08:02.921  INFO 46032 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-23 15:08:02.921  INFO 46032 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46e13c6b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@378544344 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f73d6b0] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-23 11:25:33
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46e13c6b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25f92c6d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@391820315 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f73d6b0] will not be managed by Spring
+==>  Preparing: SELECT id,name,address,phone,merchant_id,status,create_time,update_time FROM pond WHERE (merchant_id = ?) ORDER BY create_time DESC
+==> Parameters: 9(Long)
+<==    Columns: id, name, address, phone, merchant_id, status, create_time, update_time
+<==        Row: 3, 1, 1, 1, 9, 1, 2026-07-21 10:00:16, 2026-07-21 10:00:16
+<==        Row: 2, 1, 1, 1, 9, 1, 2026-07-15 16:16:28, 2026-07-15 16:37:52
+<==        Row: 1, 默认鱼塘, 系统默认鱼塘, , 9, 1, 2026-07-15 15:30:25, 2026-07-15 15:30:25
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25f92c6d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@742827e0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2062534421 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f73d6b0] will not be managed by Spring
+==>  Preparing: SELECT id,phone,nickname,password,role,admin_type,pond_id,staff_id,status,email,create_time,last_login_time FROM sys_user WHERE id=?
+==> Parameters: 9(Long)
+<==    Columns: id, phone, nickname, password, role, admin_type, pond_id, staff_id, status, email, create_time, last_login_time
+<==        Row: 9, merchant, 默认商家, $2a$10$hu/I6wSqctHQsXv4pU5aJOmTNHUVyF.I6FrL88mo2o4kdtAGdzhmS, 1, 0, null, null, 1, null, 2026-07-15 15:30:25, 2026-07-23 11:25:33
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@742827e0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cb7b2b0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1608425560 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f73d6b0] will not be managed by Spring
+==>  Preparing: SELECT id,name,address,phone,merchant_id,status,create_time,update_time FROM pond WHERE id=?
+==> Parameters: 3(Long)
+<==    Columns: id, name, address, phone, merchant_id, status, create_time, update_time
+<==        Row: 3, 1, 1, 1, 9, 1, 2026-07-21 10:00:16, 2026-07-21 10:00:16
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cb7b2b0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4848c0fd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@328980357 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f73d6b0] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM time_slot WHERE (pond_id = ?)
+==> Parameters: 3(Long)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (pond_id = ?) ORDER BY slot_date DESC,start_time ASC LIMIT ?
+==> Parameters: 3(Long), 20(Long)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 51, 2026-07-23, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-22 00:00:00, 2026-07-23 00:00:00, 1, 3, 3.00
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4848c0fd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d5a28bd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@172690462 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f73d6b0] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM reservation WHERE (slot_id = ? AND status IN (?,?,?))
+==> Parameters: 51(Long), 待抽号(String), 已抽号(String), 已核销(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d5a28bd]
+2026-07-23 15:10:00.016  INFO 46032 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 开始执行预约过期失效定时任务
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+JDBC Connection [HikariProxyConnection@521763681 wrapping com.mysql.cj.jdbc.ConnectionImpl@1f73d6b0] will be managed by Spring
+==>  Preparing: SELECT id,slot_date,slot_name,start_time,end_time,max_bookings,advance_days,draw_start_time,draw_end_time,status,pond_id,default_price FROM time_slot WHERE (status = ? AND draw_end_time < ?)
+==> Parameters: 1(Integer), 2026-07-23T15:10:00.025055900(LocalDateTime)
+<==    Columns: id, slot_date, slot_name, start_time, end_time, max_bookings, advance_days, draw_start_time, draw_end_time, status, pond_id, default_price
+<==        Row: 15, 2026-07-16, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 16, 2026-07-18, 晚场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 17, 2026-07-17, 午场, 06:00:00, 12:00:00, 10, 7, 2026-07-15 00:00:00, 2026-07-16 00:00:00, 1, 1, null
+<==        Row: 21, 2026-07-22, 早场, 08:00:00, 12:00:00, 30, 7, 2026-07-22 07:15:00, 2026-07-22 07:45:00, 1, 2, 100.00
+<==        Row: 22, 2026-07-23, 早场, 08:00:00, 12:00:00, 30, 7, 2026-07-23 07:15:00, 2026-07-23 07:45:00, 1, 2, 100.00
+<==        Row: 23, 2026-07-22, 午场, 12:00:00, 18:00:00, 30, 7, 2026-07-22 11:15:00, 2026-07-22 11:45:00, 1, 2, 100.00
+<==        Row: 24, 2026-07-22, 晚场, 18:00:00, 22:00:00, 30, 7, 2026-07-22 17:15:00, 2026-07-22 17:45:00, 1, 2, 100.00
+<==        Row: 25, 2026-07-22, 全天场, 08:00:00, 22:00:00, 30, 7, 2026-07-22 07:15:00, 2026-07-22 07:45:00, 1, 2, 100.00
+<==        Row: 26, 2026-07-22, 全天场, 08:00:00, 22:00:00, 30, 7, 2026-07-22 07:15:00, 2026-07-22 07:45:00, 1, 1, 100.00
+<==        Row: 27, 2026-07-22, 早场, 07:00:00, 11:30:00, 18, 30, 2026-07-21 22:53:20, 2026-07-22 06:00:00, 1, 4, 9800.00
+<==        Row: 28, 2026-07-22, 午场, 12:30:00, 17:00:00, 18, 30, 2026-07-21 22:53:20, 2026-07-22 11:30:00, 1, 5, 11800.00
+<==        Row: 29, 2026-07-22, 晚场, 18:00:00, 22:00:00, 18, 30, 2026-07-21 22:53:20, 2026-07-22 17:00:00, 1, 6, 13800.00
+<==        Row: 30, 2026-07-23, 全天场, 08:00:00, 18:00:00, 18, 30, 2026-07-21 22:53:20, 2026-07-23 07:00:00, 1, 4, 15800.00
+<==        Row: 31, 2026-07-23, 早场, 07:00:00, 11:30:00, 18, 30, 2026-07-21 22:53:20, 2026-07-23 06:00:00, 1, 5, 9800.00
+<==        Row: 32, 2026-07-23, 午场, 12:30:00, 17:00:00, 18, 30, 2026-07-21 22:53:20, 2026-07-23 11:30:00, 1, 6, 11800.00
+<==        Row: 39, 2026-07-23, 早场, 07:00:00, 11:30:00, 18, 30, 2026-07-22 19:33:42, 2026-07-23 06:00:00, 1, 4, 9800.00
+<==        Row: 40, 2026-07-23, 午场, 12:30:00, 17:00:00, 18, 30, 2026-07-22 19:33:42, 2026-07-23 11:30:00, 1, 5, 11800.00
+<==        Row: 51, 2026-07-23, 早场, 06:00:00, 12:00:00, 10, 7, 2026-07-22 00:00:00, 2026-07-23 00:00:00, 1, 3, 3.00
+<==      Total: 18
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 15(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 16(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 17(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 21(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 22(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 23(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 24(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 25(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 26(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 27(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 28(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 29(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 30(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 31(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 32(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 39(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 40(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be] from current transaction
+==>  Preparing: SELECT id,user_id,slot_id,status,create_time,cancel_time,cancel_reason,pond_id,checkin_code,actual_fee,check_in_time FROM reservation WHERE (slot_id = ? AND status = ?)
+==> Parameters: 51(Long), 待抽号(String)
+<==      Total: 0
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fbb10be]
+2026-07-23 15:10:00.064  INFO 46032 --- [   scheduling-1] c.e.fishing.job.ExpireReservationJob     : 预约过期失效定时任务执行完成

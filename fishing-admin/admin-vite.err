@@ -1,0 +1,191 @@
+﻿node.exe : [2m19:26:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+At line:1 char:1
++ & "D:\QQ\nvm-setup\nodejs/node.exe" "D:\QQ\nvm-setup\nodejs/node_modu ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m19:26:35[2...time-slots[39m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:26:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:26:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:27:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:27:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:27:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:27:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:27:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:27:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:28:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:28:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:28:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:28:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:28:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:28:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:29:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:29:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:29:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:29:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:29:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:29:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:30:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:30:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:30:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:30:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:30:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:30:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:31:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:31:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:31:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:31:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:31:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:31:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:32:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:32:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:32:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:32:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:32:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:32:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:33:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:33:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:33:05[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:33:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/time-slots[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:33:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/reservation/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m19:33:35[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/draw/my[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m20:00:14[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/merchant/sse/connect?token=eyJhbGciOiJIUzI1NiJ9
+.eyJzdWIiOiI5IiwiaWF0IjoxNzg0NjM0MzkzLCJleHAiOjE3ODQ3MjA3OTN9.81UabGO9LNi9_7omqZZVdeHVBrPXqghBgiapzZeiFG8&clientId=1784
+635177270-fb9qrc1t[39m
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)

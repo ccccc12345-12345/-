@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-07-23",
+    "macrostructure": "Editorial List / Merchant Editorial List",
+    "theme": "existing-system",
+    "enrichment": "none",
+    "brief": "餐厅订单页面简约高端重设计：发线边框、衬线标题、展开明细"
+  },
+  {
+    "date": "2026-07-23",
+    "macrostructure": "Dashboard Cards / Merchant Workbench",
+    "theme": "existing-system",
+    "enrichment": "none",
+    "brief": "餐厅订单页面重设计：展示客户购买的菜品明细，高级 Hallmark UI"
+  }
+]

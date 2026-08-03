@@ -1,0 +1,188 @@
+
+> fishing-admin@0.0.0 dev
+> vite --host 127.0.0.1
+
+Re-optimizing dependencies because lockfile has changed
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m248[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m3001[22m/[39m
+[2m10:10:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/auth.tsx, /src/style.css[22m
+[2m10:10:02[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/react/auth.tsx[22m Could not Fast Refresh (new export)
+[2m10:10:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/react/App.tsx[22m
+[2m10:10:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/App.tsx, /src/style.css[22m
+[2m10:10:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/App.tsx, /src/style.css[22m
+[2m10:12:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/pages.tsx, /src/style.css[22m
+[2m10:12:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/pages.tsx, /src/style.css[22m
+[2m10:13:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/react/App.tsx, /src/react/pages.tsx[22m
+[2m10:27:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/pages.tsx, /src/style.css[22m
+[2m10:40:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/react/App.tsx, /src/react/pages.tsx[22m
+[2m10:41:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/pages.tsx, /src/style.css[22m
+[2m10:52:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/react/auth.tsx, /src/style.css[22m
+[2m10:52:39[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/react/auth.tsx[22m Could not Fast Refresh ("clearAuthStorage" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m10:52:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/react/App.tsx, /src/react/pages.tsx[22m
+[2m15:05:49[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/auth.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/catch.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/checkin.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/draw.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/merchant.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/ponds.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/reservation.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/restaurant-merchant.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/restaurant.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/revenue.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/shop.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/slots.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/spots.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/staff.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/users.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/App.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/layout/MainLayout.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/pond.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/user.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/utils/date.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/utils/request.ts[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/CheckinPage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/Dashboard.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/DrawManage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/PondManage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/ReservationManage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/RevenuePage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/SlotManage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/SpotManage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/UserManage.vue[22m
+[2m15:05:50[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/Login.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantCatches.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantCheckin.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantDashboard.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantDrawResults.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantPondBoard.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantPonds.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantReservations.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantRestaurantMenus.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantRestaurantOrders.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantRevenue.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantShopProducts.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantSpots.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantStaff.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantTimeSlots.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/restaurant/Restaurant.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/restaurant/RestaurantList.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/ShareBoard.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopCheckout.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopHome.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopOrders.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopProductDetail.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Booking.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Dashboard.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/MyCatchAdd.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/MyCatches.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/MySpots.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Reservations.vue[22m
+[2m15:05:51[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+Re-optimizing dependencies because vite config has changed
+[2m15:05:52[22m [36m[1m[vite][22m[39m server restarted.
+[2m15:41:44[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Dashboard.vue[22m
+[2m15:42:28[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Dashboard.vue[22m
+[2m15:42:44[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Dashboard.vue[22m
+[2m15:43:16[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/layout/MainLayout.vue[22m
+[2m15:51:55[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m15:51:58[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mvue, pinia, element-plus, @element-plus/icons-vue, vue-router[32m[39m
+[2m15:51:58[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m15:55:52[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mhtml5-qrcode[32m[39m
+[2m15:55:52[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m16:22:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m16:22:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/auth.ts[22m
+[2m16:22:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/catch.ts[22m
+[2m16:22:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/checkin.ts[22m
+[2m16:22:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/draw.ts[22m
+[2m16:22:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/views/merchant/MerchantDashboard.vue, /src/layout/MainLayout.vue, /src/views/merchant/MerchantCheckin.vue[22m
+[2m16:22:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/ponds.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/reservation.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/restaurant-merchant.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/restaurant.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/revenue.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/shop.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/slots.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/spots.ts[22m
+[2m16:22:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/staff.ts[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/staff.ts[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/users.ts[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/views/merchant/MerchantDashboard.vue, /src/layout/MainLayout.vue, /src/views/merchant/MerchantCheckin.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/user.ts[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/views/merchant/MerchantDashboard.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/style.css, /src/views/merchant/MerchantDashboard.vue, /src/layout/MainLayout.vue, /src/views/merchant/MerchantCheckin.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/CheckinPage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/Dashboard.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/DrawManage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/PondManage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/ReservationManage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/RevenuePage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/SlotManage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/SpotManage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/Login.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/admin/UserManage.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantCatches.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantDrawResults.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantPondBoard.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantPonds.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantReservations.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantRestaurantMenus.vue[22m
+[2m16:22:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantRestaurantOrders.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantRevenue.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantRevenue.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantShopProducts.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantSpots.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/restaurant/Restaurant.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantStaff.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantTimeSlots.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/ShareBoard.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/restaurant/RestaurantList.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopCheckout.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopHome.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopOrders.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/shop/ShopProductDetail.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Booking.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Dashboard.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/MyCatchAdd.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/MyCatches.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/MySpots.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Reservations.vue[22m
+[2m16:22:41[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m16:22:41[22m [36m[1m[vite][22m[39m server restarted.
+[2m16:28:23[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m16:28:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/merchant/MerchantDashboard.vue, /src/layout/MainLayout.vue[22m
+[2m16:28:24[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m16:28:24[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:28:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/views/merchant/MerchantDashboard.vue[22m
+[2m16:28:24[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/user.ts[22m
+[2m16:28:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/merchant/MerchantDashboard.vue[22m
+[2m16:28:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/views/merchant/MerchantDashboard.vue[22m
+[2m16:28:25[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m16:28:25[22m [36m[1m[vite][22m[39m server restarted.
+[2m16:31:56[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m16:31:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/merchant/MerchantDashboard.vue, /src/layout/MainLayout.vue[22m
+[2m16:31:57[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m16:31:57[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:31:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/views/merchant/MerchantDashboard.vue[22m
+[2m16:31:57[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/user.ts[22m
+[2m16:31:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/merchant/MerchantDashboard.vue[22m
+[2m16:31:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/merchant/MerchantDashboard.vue[22m
+[2m16:31:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/views/merchant/MerchantDashboard.vue[22m
+[2m16:31:58[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m16:31:59[22m [36m[1m[vite][22m[39m server restarted.
+[2m16:33:15[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m16:33:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/merchant/MerchantDashboard.vue, /src/layout/MainLayout.vue[22m
+[2m16:33:16[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m16:33:17[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:33:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/views/merchant/MerchantDashboard.vue[22m
+[2m16:33:17[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/user.ts[22m
+[2m16:33:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/merchant/MerchantDashboard.vue[22m
+[2m16:33:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/views/merchant/MerchantDashboard.vue[22m
+[2m16:33:18[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m16:33:18[22m [36m[1m[vite][22m[39m server restarted.

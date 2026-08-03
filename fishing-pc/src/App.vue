@@ -1,0 +1,21 @@
+<script setup lang="ts">
+</script>
+
+<template>
+  <router-view />
+</template>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: var(--fp-font-body, 'PingFang SC', 'Microsoft YaHei', sans-serif);
+  color: var(--fp-text);
+  background: var(--fp-bg);
+}
+</style>

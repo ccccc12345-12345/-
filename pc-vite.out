@@ -1,0 +1,105 @@
+
+> fishing-pc@1.0.0 dev
+> vite --host 127.0.0.1
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m319[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m3002[22m/[39m
+[2m10:43:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/Login.vue[22m
+[2m10:44:06[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m10:44:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue[22m
+[2m10:50:59[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/utils/merchantConsole.ts[22m
+[2m10:51:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/Login.vue[22m
+[2m10:51:26[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m10:52:16[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m11:21:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/Booking.vue, /src/views/user/Reservations.vue, /src/views/user/MySpots.vue[22m
+[2m11:28:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Reservations.vue, /src/views/user/Reservations.vue?vue&type=style&index=0&scoped=44f8771f&lang.css[22m
+[2m11:28:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Reservations.vue, /src/views/user/Reservations.vue?vue&type=style&index=0&scoped=44f8771f&lang.css[22m
+[2m11:28:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MySpots.vue, /src/views/user/MySpots.vue?vue&type=style&index=0&scoped=99fd3542&lang.css[22m
+[2m11:28:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MySpots.vue, /src/views/user/MySpots.vue?vue&type=style&index=0&scoped=99fd3542&lang.css[22m
+[2m11:28:56[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m11:28:57[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m11:30:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/layout/MainLayout.vue?vue&type=style&index=0&scoped=fedce037&lang.css[22m
+[2m11:30:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/layout/MainLayout.vue?vue&type=style&index=0&scoped=fedce037&lang.css[22m
+[2m11:53:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/layout/MainLayout.vue?vue&type=style&index=0&scoped=fedce037&lang.css[22m
+[2m11:53:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue?vue&type=style&index=0&scoped=fedce037&lang.css[22m
+[2m11:54:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue[22m
+[2m11:54:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Booking.vue[22m
+[2m14:14:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/Booking.vue, /src/views/user/Reservations.vue, /src/views/user/MyCatches.vue, /src/views/user/MySpots.vue[22m
+[2m14:14:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/restaurant/RestaurantOrders.vue, /src/views/restaurant/RestaurantHome.vue[22m
+[2m14:15:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/restaurant/RestaurantOrders.vue, /src/views/restaurant/RestaurantHome.vue[22m
+[2m14:15:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MyCatches.vue[22m
+[2m14:15:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MyCatches.vue[22m
+[2m14:17:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/Booking.vue[22m
+[2m14:18:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/Booking.vue[22m
+[2m14:18:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/shop/ShopHome.vue, /src/views/merchant/MerchantShopProducts.vue[22m
+[2m14:18:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/shop/ShopHome.vue, /src/views/merchant/MerchantShopProducts.vue[22m
+[2m14:19:26[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m14:19:54[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m14:19:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/layout/MainLayout.vue?vue&type=style&index=0&scoped=fedce037&lang.css[22m
+[2m14:21:22[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/layout/MainLayout.vue[22m
+[2m14:21:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Booking.vue, /src/views/user/Booking.vue?vue&type=style&index=0&scoped=48152a87&lang.css[22m
+[2m14:22:33[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Booking.vue[22m
+[2m14:22:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Reservations.vue, /src/views/user/Reservations.vue?vue&type=style&index=0&scoped=44f8771f&lang.css[22m
+[2m14:23:16[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/Reservations.vue[22m
+[2m14:23:57[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/ReservationDetail.vue[22m
+[2m14:24:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MyCatches.vue, /src/views/user/MyCatches.vue?vue&type=style&index=0&scoped=a5edbe96&lang.css[22m
+[2m14:24:53[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/user/MyCatches.vue[22m
+[2m14:24:59[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/catch.ts[22m
+[2m14:25:19[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/catch.ts[22m
+[2m14:25:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/restaurant/RestaurantOrders.vue, /src/views/restaurant/RestaurantHome.vue[22m
+[2m14:25:45[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/api/restaurant.ts[22m
+[2m14:25:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/restaurant/RestaurantHome.vue, /src/views/restaurant/RestaurantHome.vue?vue&type=style&index=0&scoped=a3dcff50&lang.css[22m
+[2m14:27:00[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/restaurant/RestaurantHome.vue[22m
+[2m14:27:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/restaurant/RestaurantOrders.vue, /src/views/restaurant/RestaurantOrders.vue?vue&type=style&index=0&scoped=957fc418&lang.css[22m
+[2m14:27:47[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/restaurant/RestaurantOrders.vue[22m
+[2m14:29:17[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantPonds.vue[22m
+[2m14:30:23[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantSpotEditor.vue[22m
+[2m14:31:19[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/views/merchant/MerchantPondBoard.vue[22m
+[2m14:41:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/shop/ShopHome.vue, /src/views/merchant/MerchantShopProducts.vue[22m
+[2m14:42:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/shop/ShopHome.vue, /src/views/merchant/MerchantShopProducts.vue[22m
+[2m14:43:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/shop/ShopHome.vue, /src/views/shop/ShopHome.vue?vue&type=style&index=0&scoped=a6138372&lang.css[22m
+[2m14:45:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/shop/ShopHome.vue, /src/views/shop/ShopHome.vue?vue&type=style&index=0&scoped=a6138372&lang.css[22m
+[2m14:47:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MySpots.vue, /src/views/user/MySpots.vue?vue&type=style&index=0&scoped=99fd3542&lang.css[22m
+[2m14:48:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MySpots.vue, /src/views/user/MySpots.vue?vue&type=style&index=0&scoped=99fd3542&lang.css[22m
+[2m14:49:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/Login.vue, /src/views/user/Dashboard.vue, /src/views/user/Booking.vue, /src/views/user/Reservations.vue, /src/views/restaurant/RestaurantHome.vue, /src/views/user/MyCatches.vue, /src/views/user/MySpots.vue, /src/views/restaurant/RestaurantOrders.vue[22m
+[2m14:49:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/Login.vue, /src/views/user/Dashboard.vue, /src/views/user/Booking.vue, /src/views/user/Reservations.vue, /src/views/restaurant/RestaurantHome.vue, /src/views/user/MyCatches.vue, /src/views/user/MySpots.vue, /src/views/restaurant/RestaurantOrders.vue[22m
+[2m14:50:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MySpots.vue, /src/views/user/MySpots.vue?vue&type=style&index=0&scoped=99fd3542&lang.css[22m
+[2m14:50:18[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/data/demoProducts.ts[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/Login.vue[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/Booking.vue, /src/views/user/Reservations.vue, /src/views/restaurant/RestaurantHome.vue, /src/views/user/MyCatches.vue, /src/views/user/MySpots.vue[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/Booking.vue[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/userStore.ts[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MySpots.vue[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/Login.vue, /src/views/user/Dashboard.vue, /src/views/user/Booking.vue, /src/views/user/Reservations.vue, /src/views/restaurant/RestaurantHome.vue, /src/views/user/MyCatches.vue, /src/views/user/MySpots.vue, /src/views/restaurant/RestaurantOrders.vue[22m
+[2m15:05:53[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:\Users\ASUS\Desktop\工作项目\钓鱼\fishing-pc\tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m15:05:53[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m15:05:53[22m [36m[1m[vite][22m[39m server restarted.
+[2m15:06:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/MySpots.vue[22m
+[2m15:06:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/MySpots.vue[22m
+[2m15:09:31[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/userStore.ts[22m
+[2m15:09:32[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/store/userStore.ts[22m
+[2m16:22:42[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m16:22:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue[22m
+[2m16:22:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/MySpots.vue, /src/views/restaurant/RestaurantHome.vue, /src/views/user/Reservations.vue, /src/views/user/Booking.vue[22m
+[2m16:22:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue, /src/views/user/Booking.vue[22m
+[2m16:22:42[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m16:22:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/MySpots.vue[22m
+[2m16:22:43[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m16:22:43[22m [36m[1m[vite][22m[39m server restarted.
+[2m16:25:37[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:25:46[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:26:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue, /src/layout/MainLayout.vue?vue&type=style&index=0&scoped=fedce037&lang.css[22m
+[2m16:26:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue[22m
+[2m16:28:26[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m16:28:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue[22m
+[2m16:28:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue[22m
+[2m16:28:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/user/Dashboard.vue[22m
+[2m16:28:26[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m16:28:27[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:28:27[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m16:28:27[22m [36m[1m[vite][22m[39m server restarted.
